@@ -1,0 +1,118 @@
+html, body {
+    height:100%
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 150px repeat(2, 1fr);
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
+        "head head head"
+        "menuu cont cont"
+        "foot foot foot";
+}
+
+.header {
+    font-family: 'Anton', sans-seif;
+    font-size: 2em;
+    background-color: #28536B;
+    text-align: center;
+    grid-area: head;
+}
+
+.menu {
+    background-color: #C09187;
+    grid-area: menuu;
+}
+
+.content {
+    background-color: #F6F0ED;
+    grid-area: cont;
+    padding: 5px;
+}
+
+.footer {
+    background-color: #7EA8BE;
+    text-align: center;
+    grid-area: foot;
+    line-height: 2em;
+}
+
+.button{
+    margin-right: 3px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button1{
+    background-color:purple;
+}
+
+.button2{
+    background-color: grey;
+}
+
+.button3{
+    background-color: green;
+}
+
+.button4{
+    background-color: red;
+}
+
+.botbutton{
+    display:flex;
+    align-self: center;
+    justify-content: center;
+    margin: 5px;
+    border: 2px;
+}
+
+.image{
+    width: 30px;
+    height: 30px;
+}
+
+textarea {
+    font-size: .9rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    width: 85%;
+    height: 85%;
+}
+
+@media screen and (max-width:750px) {
+    .container {
+        height: 100%;
+        font-size: 90%;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 150px repeat(2, 1fr);
+        grid-template-rows: 100px 100px 1fr 100px;
+        grid-template: minmax(150px, auto);
+        grid-template-areas:
+            "head head head"
+            "menuu menuu menuu"
+            "cont cont cont"
+            "foot foot foot";
+    }
+    .side>li {
+            display: inline;
+            margin-right: 20px;
+        }
+    
+    .menu {
+        line-height: 0.2em;
+    }
+}
