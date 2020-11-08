@@ -48,8 +48,6 @@ html, body {
     color: white;
     padding: 2px 5px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
 }
 
@@ -70,7 +68,7 @@ html, body {
 }
 
 .botbutton{
-    display:flex;
+    display: flex;
     align-self: center;
     justify-content: center;
     margin: 5px;
